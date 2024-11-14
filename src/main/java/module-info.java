@@ -7,6 +7,7 @@ module com.example {
     requires org.kordamp.ikonli.core;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.ikonli.bootstrapicons;
+    requires MaterialFX;
 
     opens com.example to javafx.fxml;
     exports com.example;
