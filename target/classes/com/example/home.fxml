@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="701.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="701.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.HomePageController">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
    </columnConstraints>
@@ -62,17 +62,96 @@
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #e5e5e5;">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="111.0" style="-fx-font-weight: bold;" text="OBJECTIVE" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="113.0" style="-fx-font-weight: bold;" text="OBJECTIVE" textAlignment="CENTER" wrapText="true">
                      <font>
                         <Font size="14.0" />
-                     </font></Label>
-                  <Label alignment="CENTER" prefHeight="163.0" prefWidth="120.0" text="Enhance Accessibility and User Experience" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS" />
-                  <Label alignment="CENTER" prefHeight="145.0" prefWidth="120.0" text="Support Academic and Lifelong Learning" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS" />
-                  <Label alignment="CENTER" prefHeight="83.0" prefWidth="120.0" text="Promote Community Engagement and Knowledge Sharing" textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="136.0" prefWidth="100.0" text="Promote Community Engagement and Knowledge Sharing" textAlignment="CENTER" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="145.0" prefWidth="120.0" text="Support Academic and Lifelong Learning" textAlignment="CENTER" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="163.0" prefWidth="120.0" text="Enhance Accessibility and User Experience" textAlignment="CENTER" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <FontIcon iconLiteral="bi-facebook" iconSize="20">
+                           <HBox.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </HBox.margin>
+                        </FontIcon>
+                        <FontIcon iconLiteral="bi-youtube" iconSize="20" selectionEnd="0">
+                           <HBox.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </HBox.margin>
+                        </FontIcon>
+                        <FontIcon iconLiteral="bi-twitter" iconSize="20">
+                           <HBox.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </HBox.margin>
+                        </FontIcon>
+                        <FontIcon iconLiteral="bi-instagram" iconSize="20">
+                           <HBox.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </HBox.margin>
+                        </FontIcon>
+                     </children>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </HBox>
                </children>
             </VBox>
-            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #d5d5d5;" GridPane.columnIndex="1" />
-            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #cecccc;" GridPane.columnIndex="2" />
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #d5d5d5;" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="129.0" style="-fx-font-weight: bold;" text=" E-LIBRARY" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="205.0" prefWidth="417.0" text="Welcome to e-Library, a digital platform dedicated to making knowledge accessible, engaging, and empowering for all. Founded with a commitment to modernize information access, we have combined technology with curated content to support diverse learning needs and interests." textAlignment="JUSTIFY" wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #cecccc;" GridPane.columnIndex="2">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#switchToBookPage" prefHeight="40.0" prefWidth="129.0" style="-fx-font-weight: bold;" text="BOOKS &gt;" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="129.0" style="-fx-font-weight: bold;" text=" SERVICE &gt;" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="129.0" style="-fx-font-weight: bold;" text="CONTACT &gt;" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
          </children>
       </GridPane>
    </children>
