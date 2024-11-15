@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 public class BookPageController {
 
     @FXML
-    private void switchToPrimary() throws IOException {
+    private void switchToHomePage() throws IOException {
         App.setRoot("home");
     }
 }

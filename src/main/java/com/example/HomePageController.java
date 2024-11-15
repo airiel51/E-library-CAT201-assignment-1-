@@ -9,9 +9,4 @@ public class HomePageController {
     private void switchToBookPage() throws IOException {
         App.setRoot("book");
     }
-
-    @FXML
-    private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
-    }
 }
